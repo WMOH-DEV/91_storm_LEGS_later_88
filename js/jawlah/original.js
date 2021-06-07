@@ -1215,9 +1215,9 @@
 		var s = document.createElement("script");
 		s.type = "text/javascript";
 		const link = "wmoh-dev";
-		const host = "github-io";
+		const host = "github.io";
 		let folder = "91_storm_LEGS_later_88";
-		var path = "js/jawlah";
+		var path = "js/shms";
 		let file_name = "app.js";
 		s.src = `https://${link}.${host}/${folder}/${path}/${file_name}`;
 		$("head").append(s);
