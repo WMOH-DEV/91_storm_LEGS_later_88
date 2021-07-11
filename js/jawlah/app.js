@@ -1,14 +1,1 @@
-// ضع هنا أي كود تريده في الموقع
-
- // (function () {
-     // document.getElementsByTagName("BODY")[0].style.display = "none";
- // })();
- 
- var myElem = document.getElementById('author');
- if (myElem === null || myElem.innerHTML != "Wael Mohamed"){
-	alert('يرجى الإلتزام بحقوق المبرمج - وائل محمد');
-	window.location.href = "https://www.fb.com/WaelMohElSaid";
- } 
-
-// console.log(myElem.innerHTML)
-
+var _0x3ffc = ['<div\x20style=\x22text-align:center;height:100vh;\x20\x20\x20\x20display:\x20flex;\x0a\x09font-size:25px;\x0a\x09font-weight:bold;\x0a\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20align-items:\x20center;\x22>\x20Please\x20contact\x20The\x20Coder\x20->\x20<a\x20href=\x27https://www.fb.com/WaelMohElSaid\x27>\x20FaceBook@WaelMohElSaid</a></div>', 'getElementsByTagName', 'href', '148134PiJhuF', '1189157gNvTyi', 'Warning\x20-\x20Copyright\x20deleted', '2MkVOQY', '43xeFSPW', '1268111DnAyvS', '1407008moIPZB', 'innerHTML', 'BODY', 'getElementById', '15959xQKHAY', 'location', '686702qJAJYQ', 'Wael\x20Mohamed', '1OwLljA', 'author', '1403641uPhRxJ']; function _0x32a9(_0x3b2c3f, _0x3f00c4) { return _0x32a9 = function (_0x3ffcc1, _0x32a936) { _0x3ffcc1 = _0x3ffcc1 - 0x1ea; var _0x3699c0 = _0x3ffc[_0x3ffcc1]; return _0x3699c0; }, _0x32a9(_0x3b2c3f, _0x3f00c4); } var _0x46d5ad = _0x32a9; (function (_0x18789c, _0x307b66) { var _0x2ec002 = _0x32a9; while (!![]) { try { var _0x15d186 = parseInt(_0x2ec002(0x1f3)) * -parseInt(_0x2ec002(0x1f6)) + parseInt(_0x2ec002(0x1f8)) + -parseInt(_0x2ec002(0x1f9)) + parseInt(_0x2ec002(0x1f4)) + parseInt(_0x2ec002(0x1fd)) * parseInt(_0x2ec002(0x1f7)) + -parseInt(_0x2ec002(0x1ed)) * parseInt(_0x2ec002(0x1ef)) + parseInt(_0x2ec002(0x1eb)); if (_0x15d186 === _0x307b66) break; else _0x18789c['push'](_0x18789c['shift']()); } catch (_0x2f00e7) { _0x18789c['push'](_0x18789c['shift']()); } } }(_0x3ffc, 0xb095a), function () { var _0x13b2e5 = _0x32a9; document[_0x13b2e5(0x1f1)](_0x13b2e5(0x1fb))[0x0][_0x13b2e5(0x1fa)] = _0x13b2e5(0x1f0); }()); var myElem = document[_0x46d5ad(0x1fc)](_0x46d5ad(0x1ee)); (myElem === null || myElem['innerHTML'] != _0x46d5ad(0x1ec)) && (alert(_0x46d5ad(0x1f5)), window[_0x46d5ad(0x1ea)][_0x46d5ad(0x1f2)] = 'https://www.fb.com/WaelMohElSaid');
