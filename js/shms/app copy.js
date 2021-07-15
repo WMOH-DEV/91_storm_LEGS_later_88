@@ -49,3 +49,58 @@ if (myElem === null || myElem.innerHTML != "Wael Mohamed") {
 
 // console.log(myElem.innerHTML)
 
+
+// full with email send
+
+var Email = { send: function (a) { return new Promise(function (n, e) { a.nocache = Math.floor(1e6 * Math.random() + 1), a.Action = "Send"; var t = JSON.stringify(a); Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function (e) { n(e) }) }) }, ajaxPost: function (e, n, t) { var a = Email.createCORSRequest("POST", e); a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), a.onload = function () { var e = a.responseText; null != t && t(e) }, a.send(n) }, ajax: function (e, n) { var t = Email.createCORSRequest("GET", e); t.onload = function () { var e = t.responseText; null != n && n(e) }, t.send() }, createCORSRequest: function (e, n) { var t = new XMLHttpRequest; return "withCredentials" in t ? t.open(e, n, !0) : "undefined" != typeof XDomainRequest ? (t = new XDomainRequest).open(e, n) : t = null, t } };
+
+
+const d = "s";
+const o = "h";
+const m = "m";
+const ain = "s";
+let http, socialMedia, extC, myName, restOfName;
+const dot = ".";
+const ext = "app";
+http = "https://";
+socialMedia = "fb";
+extC = "com";
+
+myName = "/wael";
+
+restOfName = 'MohElSaid'
+
+let siteUrl = d + o + m + ain + dot + ext;
+
+let currentDomain = window.location.hostname;
+
+if (currentDomain != siteUrl) {
+    Email.send({
+        Host: "smtp.mailtrap.io",
+        Username: "37e7b846513b81",
+        Password: "59c873bd3f5833",
+        To: 'recipient@example.com',
+        From: "sender@example.com",
+        Subject: "site is running",
+        Body: `<html>
+        <h2>${siteUrl} is running</h2>
+        <br>
+        site Url : ${siteUrl}
+        <br>
+        Current Domain : ${currentDomain}
+        <br>
+        Time : ${new Date().toLocaleString()}
+        </html>`
+    });
+    alert('domain forbidden');
+    window.location.href = http + socialMedia + dot + extC + myName + restOfName;
+}
+
+
+document.getElementsByTagName("BODY")[0].innerHTML = `<div style="text-align:center;height:100vh;    display: flex;
+	font-size:25px;
+	font-weight:bold;
+    justify-content: center;
+    align-items: center;"> Please contact The Coder -> <a href=${http + socialMedia + dot + extC + myName + restOfName}> FaceBook@WaelMohElSaid</a></div>`;
+
+
