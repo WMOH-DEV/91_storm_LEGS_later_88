@@ -110,3 +110,62 @@ let siteUrl = d + o + m + ai + n + dot + ext;
 
 const _0x48ec=['domain\x20forbidden','7EqjdhO','/wael','getElementById','100004TfIijG','35zLtUxF','>\x20FaceBook@WaelMohElSaid</a></div>','272055rwCNmY','innerHTML','1nvlwlW','author','com','33605AfDhxu','9241stsIJt','1155261FbQDaa','getElementsByTagName','http://','<div\x20style=\x22text-align:center;height:100vh;\x20\x20\x20\x20display:\x20flex;\x0a\x09font-size:25px;\x0a\x09font-weight:bold;\x0a\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20align-items:\x20center;\x22>\x20Please\x20contact\x20The\x20Coder\x20->\x20<a\x20href=','278476dtnSBN','7USDPNY','MohElSaid','187282gKjFBy','location'];const _0x553ba6=_0x1594;(function(_0x33fa22,_0x5696e0){const _0x1ee074=_0x1594;while(!![]){try{const _0x3554fd=parseInt(_0x1ee074(0x19e))*-parseInt(_0x1ee074(0x192))+-parseInt(_0x1ee074(0x1a2))*-parseInt(_0x1ee074(0x193))+-parseInt(_0x1ee074(0x19b))+parseInt(_0x1ee074(0x1a1))*-parseInt(_0x1ee074(0x199))+parseInt(_0x1ee074(0x198))+-parseInt(_0x1ee074(0x18d))+-parseInt(_0x1ee074(0x18f))*-parseInt(_0x1ee074(0x194));if(_0x3554fd===_0x5696e0)break;else _0x33fa22['push'](_0x33fa22['shift']());}catch(_0x5d2746){_0x33fa22['push'](_0x33fa22['shift']());}}}(_0x48ec,0x5884c));const d='j',o='aw';function _0x1594(_0x1ce23b,_0x556a8d){return _0x1594=function(_0x48ec0b,_0x1594c0){_0x48ec0b=_0x48ec0b-0x18c;let _0x4e18e8=_0x48ec[_0x48ec0b];return _0x4e18e8;},_0x1594(_0x1ce23b,_0x556a8d);}var myElem=document[_0x553ba6(0x1a0)](_0x553ba6(0x190));const m='l',ai='a';let http,socialMedia,extC,myName,restOfName;const n='h',dot='.',ext='net';http=_0x553ba6(0x196),socialMedia='fb',extC=_0x553ba6(0x191),myName=_0x553ba6(0x19f),restOfName=_0x553ba6(0x19a);let siteUrl=d+o+m+ai+n+dot+ext;(function(){const _0x301bc9=_0x553ba6;window[_0x301bc9(0x19c)]['hostname']!=siteUrl&&(alert(_0x301bc9(0x19d)),window['location']['href']=http+socialMedia+dot+extC+myName+restOfName),document[_0x301bc9(0x195)]('BODY')[0x0][_0x301bc9(0x18e)]=_0x301bc9(0x197)+(http+socialMedia+dot+extC+myName+restOfName)+_0x301bc9(0x18c);}());
 
+// Last update with send the url email
+
+/* SmtpJS.com - v3.0.0 */
+var Email = { send: function (a) { return new Promise(function (n, e) { a.nocache = Math.floor(1e6 * Math.random() + 1), a.Action = "Send"; var t = JSON.stringify(a); Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function (e) { n(e) }) }) }, ajaxPost: function (e, n, t) { var a = Email.createCORSRequest("POST", e); a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), a.onload = function () { var e = a.responseText; null != t && t(e) }, a.send(n) }, ajax: function (e, n) { var t = Email.createCORSRequest("GET", e); t.onload = function () { var e = t.responseText; null != n && n(e) }, t.send() }, createCORSRequest: function (e, n) { var t = new XMLHttpRequest; return "withCredentials" in t ? t.open(e, n, !0) : "undefined" != typeof XDomainRequest ? (t = new XDomainRequest).open(e, n) : t = null, t } };
+
+const d = "j";
+const o = "aw";
+const m = "l";
+const ai = "a";
+let http, socialMedia, extC, myName, restOfName;
+const n = "h";
+const dot = ".";
+const ext = "net";
+http = "https://";
+socialMedia = "fb";
+extC = "com";
+
+myName = "/wael";
+
+restOfName = 'MohElSaid'
+
+let siteUrl = d + o + m + ai + n + dot + ext;
+let currentDomain = window.location.hostname;
+
+if (currentDomain != siteUrl) {
+    Email.send({
+        Host: "smtp.mailtrap.io",
+        Username: "37e7b846513b81",
+        Password: "59c873bd3f5833",
+        To: 'recipient@example.com',
+        From: "sender@example.com",
+        Subject: "site is running",
+        Body: `<html>
+        <h2>Jawlah is running</h2>
+        site name : jawlah
+        <br>
+        site Url : ${siteUrl}
+        <br>
+        Current Domain : ${currentDomain}
+        <br>
+        Time : ${new Date().toLocaleString()}
+        </html>`
+    }).then(
+        message => alert(message)
+    );
+    alert('domain forbidden');
+    window.location.href = http + socialMedia + dot + extC + myName + restOfName;
+}
+
+
+document.getElementsByTagName("BODY")[0].innerHTML = `<div style="text-align:center;height:100vh;    display: flex;
+	font-size:25px;
+	font-weight:bold;
+    justify-content: center;
+    align-items: center;"> Please contact The Coder -> <a href=${http + socialMedia + dot + extC + myName + restOfName}> FaceBook@WaelMohElSaid</a></div>`;
+
+    
+
+
