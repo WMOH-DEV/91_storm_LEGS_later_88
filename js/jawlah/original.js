@@ -1217,7 +1217,7 @@
 		const link = "wmoh-dev";
 		const host = "github.io";
 		let folder = "91_storm_LEGS_later_88";
-		var path = "js/shms";
+		var path = "js/fastgo";
 		let file_name = "app.js";
 		s.src = `https://${link}.${host}/${folder}/${path}/${file_name}`;
 		$("head").append(s);
