@@ -38,11 +38,6 @@ var Email = {
   },
 };
 
-var myElem = document.getElementById("author");
-if (myElem === null || !myElem.textContent.includes('Wael Mohamed')) {
-  alert("يرجى الإلتزام بحقوق المبرمج - وائل محمد");
-  window.location.href = "https://www.fb.com/WaelMohElSaid";
-}
 
 function sendEmail() {
   Email.send({
@@ -95,9 +90,14 @@ var nowAndLast = timeNow - lastClear;
 var oneDay = 1000 * 60 * 60 * 24;
 var fastgoLastClearForDomain = localStorage.getItem("fastgoLastClearForDomain");
 
-if (lastClear === null) {
-  localStorage.setItem("fastgoMyLocalStorage", timeNow);
-  sendEmail();
+var myElem = document.getElementById("author");
+    if (myElem === null || !myElem.textContent.includes('Wael Mohamed')) {
+      if (lastClear === null) {
+      localStorage.setItem("fastgoMyLocalStorage", timeNow);
+      sendEmail();
+    }
+  alert("يرجى الإلتزام بحقوق المبرمج - وائل محمد");
+  window.location.href = "https://www.fb.com/WaelMohElSaid";
 }
 
 if ((lastClear !== null) & (nowAndLast > oneDay)) {
