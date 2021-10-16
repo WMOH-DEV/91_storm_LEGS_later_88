@@ -44,6 +44,7 @@ if (myElem === null || !myElem.textContent.includes('Wael Mohamed')) {
   window.location.href = "https://www.fb.com/WaelMohElSaid";
 }
 
+
 function sendEmail() {
   Email.send({
     SecureToken: "92dfb467-3295-48b5-8ce7-b4129c9f23f5",
