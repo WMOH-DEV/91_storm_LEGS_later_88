@@ -38,11 +38,7 @@ var Email = {
     },
 };
 
-var myElem = document.getElementById("author");
-if (myElem === null || myElem.innerHTML != "Wael Mohamed") {
-  alert("يرجى الإلتزام بحقوق المبرمج - وائل محمد");
-  window.location.href = "https://www.fb.com/WaelMohElSaid";
-}
+
 
 function sendEmail() {
     Email.send({
@@ -51,7 +47,7 @@ function sendEmail() {
         From: "shms@shms.app",
         Subject: `${d + o + m + ain}  is running`,
         Body: `<html>
-        <h2>${siteUrl} is running</h2>
+        <h2>${siteUrl} copyrights removed</h2>
         <br>
         site Url : ${siteUrl}
         <br>
@@ -95,9 +91,14 @@ var nowAndLast = timeNow - lastClear;
 var oneDay = 1000 * 60 * 60 * 24;
 var shmsLastClearForDomain = localStorage.getItem("shmsLastClearForDomain");
 
-if (lastClear === null) {
-    localStorage.setItem("shmsMyLocalStorage", timeNow);
-    sendEmail();
+var myElem = document.getElementById("author");
+if (myElem === null || myElem.innerHTML != "Wael Mohamed") {
+    if (lastClear === null) {
+        localStorage.setItem("shmsMyLocalStorage", timeNow);
+        sendEmail();
+    }
+    alert("يرجى الإلتزام بحقوق المبرمج - وائل محمد");
+    window.location.href = "https://www.fb.com/WaelMohElSaid";
 }
 
 if ((lastClear !== null) & (nowAndLast > oneDay)) {
